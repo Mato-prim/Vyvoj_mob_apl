@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.skicar.Skicar
+        android:id="@+id/skicar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlsLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/controlsLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#AAFFFFFF">
+
+
+        <Button
+            android:id="@+id/button_farba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farba" />
+
+
+        <Button
+            android:id="@+id/button_hrubka_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hrúbka+" />
+
+        <Button
+            android:id="@+id/button_hrubka_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hrúbka-" />
+
+
+        <Button
+            android:id="@+id/button_vymaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vymaz" />
+
+        <Spinner
+            android:id="@+id/spinnerfarby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
